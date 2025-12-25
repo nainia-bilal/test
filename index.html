@@ -1,39 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My first Website</title>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEVELOPING  MY FIRST WEBSITE</title>
+</head>
 <body>
-<nav><nav>
-    <table width="100%" bgcolor="#f4f4f4" cellpadding="10">
-        <tr>
-            <td align="center"><a href="index.html">Home</a></td>
-            <td align="center"><a href="about.html">About</a></td>
-            <td align="center"><a href="contact.html">Contact</a></td>
-        </tr>
-    </table>
-</nav>
-<hr><nav>
-
-    <h1>Welcome to My First Website</h1>
-    
-   
-    <p>Bilal is a 20-year-old individual who embodies the energy and ambition of youth. At this pivotal age, he stands at the gateway to a world of endless possibilities, driven by a natural curiosity and a desire to make his mark</p>
-   
-    <h3>
-    <img src="./src/image.jpg" alt="Sample Image" width="400">
-
-    <h3>Listen to this Audio:</h3>3
-    <audio controls>
-        <source src="./src/vidio.mp4" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-
-    <h3>Watch this Video:</h3>
-    <video width="400" controls>
-        <source src="./src/vidio.mp4" type="video/mp4">
-        Your browser does not support the video tag. </video>
-
-    <footer>2025 bilal nainia</footer>
-
+    <header>
+        <nav>
+            <table border="1" width="100%"> F
+                <tr>
+                    <td align="center"><a href="index.html">Home</a></td>
+                    <td align="center"><a href="about.html">About</a></td>
+                    <td align="center"><a href="contact.html">Contact</a></td>
+                </tr>
+            </table>
+        </nav>
+    </header>
+    <hr>
+    <h1 style="color: rgb(247, 6, 6);">Welcome to My First Website</h1>
+    <section>
+        <h2>Personal Information</h2>
+        <p style="color: rgb(44, 67, 192);">
+            <b>Bilal</b> is a 20-year-old individual who embodies the energy and ambition of youth. At this stage in life, Bilal is likely exploring various opportunities, pursuing education or career paths, and seeking to establish a foundation for the future. With a world of possibilities ahead, Bilal's age signifies a time of growth, learning, and self-discovery.
+    </section>
+    <section>
+        <h3>My Gallery</h3>
+        <img src="./src/image.jpg" alt="Sample Image" width="300" style="border-radius: 10px;">
+        
+        <h3>Audio Player</h3>
+        <audio controls>
+            <source src="./src/vidio.mp4" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <h3>Video Player</h3>
+        <video width="400" controls>
+            <source src="./src/vidio.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+    <section>
+        <h3>Contact Form</h3>
+        <form>
+            <label>Name:</label><br>
+            <input type="text" placeholder="Bilal Nainia"><br>
+            <label>Message:</label><br>
+            <textarea rows="4" cols="30"></textarea><br>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <hr>
+    <footer>
+        <p>&copy; 2025 Bilal Nainia</p>
+    </footer>
 </body>
 </html>

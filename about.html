@@ -3,24 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-    </style>
+    <title>About - Bilal Nainia</title>
 </head>
 <body>
-    <div class="container">
-        <h1>About</h1>
-        <p>Welcome to the About page. Add your content here.</p>
-    </div>
+    <header>
+        <nav>
+            <table border="1" width="100%">
+                <tr>
+                    <td align="center"><a href="index.html">Home</a></td>
+                    <td align="center"><a href="about.html">About</a></td>
+                    <td align="center"><a href="contact.html">Contact</a></td>
+                </tr>
+            </table>
+        </nav>
+    </header>
+<h1>My First Website</h1>
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+    <hr> <main>
+        <section>
+            <h2>About Me</h2>
+            <div class="container">
+                <p style="color: rgb(255, 0, 0);">Welcome to the About page. Add your content here.</p>
+                <p style="color: rgb(102, 247, 6);">This website is created by Bilal Nainia to showcase my skills and projects.</p>
+            </div>
+        </section>
+        <article>
+            <h3>My Passion</h3>
+            <p>I am passionate about web development and continuing to learn every day.</p>
+        </article>
+    </main>
+    <hr>
+    <h1>Geolocation</h1>
+<p>Click the button to get your coordinates.</p>
+
+<button onclick="getLocation()">Try It</button>
+
+<p id="demo"></p>
+
+<script>
+const x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(success, error);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function success(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+
+function error() {
+  alert("Sorry, no position available.");
+}
+</script>
+
+    <footer>
+        <p>&copy; 2025 Bilal Nainia.</p>
+    </footer>
+
 </body>
 </html>
